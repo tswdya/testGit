@@ -20,5 +20,13 @@ public class TestController {
         System.out.println(services);
         return services;
     }
+    
+    
+    @GetMapping("/test1")
+    public String dc1() {
+        String services = "Services: " + discoveryClient.getServices();
+        System.out.println(services);
+        return services;
+    }
 
 }
